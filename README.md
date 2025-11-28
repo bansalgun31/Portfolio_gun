@@ -1,48 +1,73 @@
-This is my Personal Portfolio.
 # Portfolio_gun
 
+Personal portfolio website built with HTML, SCSS, and JavaScript.
 
-🔹 Tech Stack:
-Core: HTML, CSS (SASS), JavaScript
-Bundler: Parcel
-Styling: SCSS, Bootstrap 5
-Libraries:
-jQuery
-Popper.js & @popperjs/core (tooltip & dropdown support)
-Vanilla-tilt (3D tilt hover effect)
+## Features
+- Responsive layout (mobile, tablet, desktop)
+- SCSS architecture with partials and variables
+- Interactive animations: scroll reveal and vanilla-tilt
+- Bundled with Parcel for fast development and builds
 
-🔹 Setup Instructions:
-# Clone the repository
+## Tech Stack
+- HTML5
+- SCSS (SASS)
+- JavaScript (ES6+)
+- Parcel (bundler)
+- Bootstrap 5 (utility & grid)
+- Optional: jQuery, Popper.js (used for legacy plugins)
+
+## Quick Start
+1. Clone the repository:
+
+```bash
 git clone https://github.com/bansalgun31/Portfolio_gun.git
 cd Portfolio_gun
+```
 
-# Install dependencies
+2. Install dependencies:
+
+```powershell
 npm install
+```
 
-# Start development server
+3. Start the development server:
+
+```powershell
 npm start
+```
 
-# Build for production
+4. Build for production:
+
+```powershell
 npm run build
+```
 
-Parcel will start a local dev server and open the portfolio in your browser.
+Parcel will start a local dev server and open the site in your default browser.
 
+## Project Structure
 
-🔹 Challenges Faced & Solutions:
-Here are some challenges likely relevant to your repo (you can confirm or tweak these):
+- `src/` — source files
+  - `index.html` — main HTML entry
+  - `index.js` — main JS
+  - `styles.scss` — top-level SCSS
+  - `assets/` — images, icons, and data
+  - `sass/` — SCSS partials (abstracts, base, components, layout, sections)
+  - `scripts/` — custom JS modules (scrollReveal, tiltAnimation)
 
-1-Responsive Design Across Devices
-Challenge: Making sure the portfolio looked clean on mobile, tablet, and desktop.
-Solution: Used Bootstrap grid system & custom media queries in SCSS for fine-tuning.
+## Development Notes
+- SCSS is organized into partials under `src/sass/` for maintainability.
+- Parcel handles module bundling and hot reloading during development.
+- If you remove or add dependencies, run `npm install` again.
 
-2-Asset & Dependency Management
-Challenge: Handling CSS, JS, and images without manually linking every file.
-Solution: Implemented Parcel bundler, which auto-handles dependency graph & hot reloading.
+## Common Commands
+- `npm start` — Run dev server with hot reload
+- `npm run build` — Create production build in `dist/`
+- `npm run lint` — (If configured) Run linters
 
-3-Styling & Customization
-Challenge: Modifying the base simplefolio template while keeping it maintainable.
-Solution: Used SCSS partials for modular styling and Prettier for code formatting.
+## Troubleshooting
+- If the dev server doesn't start, delete `node_modules` and run `npm install` again.
+- If styles don't update, ensure `styles.scss` imports the partials from `src/sass/`.
 
-4-Animations / Interactivity
-Challenge: Adding smooth hover/scroll effects without slowing performance.
-Solution: Integrated Vanilla-tilt for lightweight 3D hover effect.
+## License & Credits
+This project is provided under the terms in `LICENSE.md`.
+
